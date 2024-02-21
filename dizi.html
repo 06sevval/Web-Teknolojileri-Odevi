@@ -1,0 +1,265 @@
+<head>
+  <meta charset="UTF-8">
+  <TITLE> citirgurumi.com </TITLE>
+    <link rel="stylesheet" href="web_ödev.css"/> <!--Harici CSS dosyasını eklemek-->
+    <style>
+      body{background-color: rgb(223, 202, 170);
+           background-image: url(arkaplan.png);
+          background-size: cover;
+        background-repeat: repeat;}
+        .clock
+          {
+            display: inline-block;
+              font-size: 30px;
+              color: #000000;
+          }
+
+      </style>
+      
+</head>
+<body>
+  <script src="web_ödev.js" defer></script>
+  <!--HEADER-->
+  <div class="header" style="background-color: white; border-bottom:2px dashed rgb(223, 202, 170)">
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="mobileLinkDisplay">
+      <ul id="navbar">
+        <div class="mobileLink">
+          <li><a><div class="clock"></div></a></li>
+          <div class="anasayfa">
+            <li><a href="anasayfa.html" >ÇITIRGURUMİ</a></li>
+          </div>
+          <li><a href="https://www.youtube.com/watch?v=3CWJNqyub3o" class="headerLink"><img  src="süs.png" style="width:60px; height:50px"></a></li>
+          <li><a href="hediyelikler.html" class="headerLink">Hediyelikler</a></li>
+          <li><a href="oyun.html" class="headerLink">Oyun Figürleri</a></li>
+          <li><a href="dizi.html" class="headerLink">Dizi-Film Figürleri </a></li>
+          <li><a href="hakk%C4%B1m%C4%B1zda.html" class="headerLink">Hakkımızda </a></li>
+          <li><a href="iletisim.html" class="headerLink">İletişim </a></li>
+          <li><a href="sepet.html"><img src="sepet.PNG" style="width:40px;height:40px;"></a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+      <!-----------------------1---------------------------->
+
+      <div class="imgMaindiv">
+        <div class="imgDiv">
+            <img  src="chewbacca.jpg" alt="">
+            <br>
+            <h4>Star Wars</h4>
+            <h4>Chewbacca</h4>
+            <div class="rating">
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+              </div>
+            
+              <h3><s>500 TL</s>      350 TL </h3>
+              <h5 style="color:red;font-size: 15px;">Son 1 ürün</h5>
+              <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+            </div>
+
+        <div class="imgDiv">
+            <img  src="darthvader.jpg" alt="">
+            <br>
+            <h4>Star Wars</h4>
+            <h4> Darth Vader</h4>
+            <div class="rating">
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+              </div>
+            
+              <h3><s>500 TL</s>      350 TL </h3>
+            <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+            <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+            </div>
+            <div class="imgDiv">
+                <img  src="batman.jpg" alt="">
+                <h4>DC Films</h4>
+                <h4>Batman Figürü</h4>
+            <div class="rating">
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız2.PNG">  </span>
+              </div>
+            
+              <h3><s>500 TL</s>      330 TL </h3>
+            <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+            <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+            </div>
+            <div class="imgDiv">
+                <img  src="olaf.jpg" alt="">
+                <br>
+                <h4>Karlar Ülkesi</h4>
+            <h4> Olaf Figürü</h4>
+            <div class="rating">
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız.png">  </span>
+                <span class="star"> <img src="yıldız2.png">  </span>
+                <span class="star"> <img src="yıldız2.png">  </span>
+              </div>
+            
+              <h3><s>450 TL</s>      300 TL </h3>
+            <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+            <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+            </div>
+    </div>
+
+    <!-------------------------2-------------------------->
+
+    <div class="imgMaindiv">
+    <div class="imgDiv">
+        <img  src="it.jpg" alt="">
+        <br>
+        <h4>IT</h4>
+        <h4> Pennywise Figür</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+         <h3><s>600 TL</s>      400 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+
+    <div class="imgDiv">
+        <img  src="hulk.jpg" alt="">
+        <br>
+        <h4>Marvel</h4>
+        <h4> Hulk Figür</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+         <h3><s>200 TL</s>      130 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+        <div class="imgDiv">
+            <img  src="wednesday.jpg" alt="">
+            <h4>Adams Family</h4>
+            <h4> Wednesday</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.PNG">  </span>
+          </div>
+        <h3><s>500 TL</s>      400 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+
+        <div class="imgDiv">
+            <img  src="shrek.jpg" alt="">
+            <br>
+            <h4>Shrek</h4>
+        <h4> Shrek Figür</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+        <h3><s>500 TL</s>      400 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+</div>
+
+        <!------------------------3--------------------------->
+    <div class="imgMaindiv" style="padding-bottom: 200px;">
+    <div class="imgDiv">
+        <img  src="harrypotter.JPG" alt="">
+        <br>
+        <h4>Harry Potter</h4>
+        <h4> Harry Figürü</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+         <h3><s>500 TL</s>      350 TL </h3>
+         <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+
+    <div class="imgDiv">
+        <img  src="dişsiz.JPG" alt="">
+        <br>
+        <h4>Ejderhanı Nasıl Eğitirsin?</h4>
+        <h4> Dişsiz</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+         <h3><s>400 TL</s>      300 TL </h3>
+         <h5 style="color:red;font-size: 15px;">Son 2 ürün</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+        <div class="imgDiv">
+            <img  src="stella.jpg" alt="">
+            <h4>Winx Club</h4>
+            <h4> Stella Figürü</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.PNG">  </span>
+          </div>
+        <h3><s>500 TL</s>      350 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+
+
+        <div class="imgDiv">
+            <img  src="muisa.jpg" alt="">
+            <br>
+            <h4>Winx Club</h4>
+        <h4> Muisa Figürü</h4>
+        <div class="rating">
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+            <span class="star"> <img src="yıldız.png">  </span>
+          </div>
+        <h3><s>500 TL</s>      350 TL </h3>
+        <h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+        <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+        </div>
+</div>
+
+</body>
