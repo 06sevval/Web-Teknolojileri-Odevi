@@ -1,0 +1,556 @@
+*{
+margin:0;
+padding:0;
+
+}
+/*Navbar*/
+.header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+    padding: 0px 15px;
+}
+.headerlink {
+    margin-right: 10px;
+    text-decoration: none;
+    color:black;
+    font-size:15px;
+}
+    .anasayfa{
+    display:inline-block;
+    margin-left:50px;
+    margin-top:30px;
+    }
+    .anasayfa a{
+    color:rgb(30, 131, 30);
+    text-decoration:none;
+    font-size:30px;
+    font-family: Impact;
+    }
+    
+    ul{
+    text-align:right;
+    margin-right:30px;
+    }
+    ul li {
+    display:inline-block;
+    margin:0 8px;
+    }
+    ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:20px;
+    padding:10px 10px;
+    }
+    .mobileLink a:hover{
+        background-color: rgb(146, 15, 15);
+        color:white;
+    }
+    .anasayfa a:hover{
+        background-color: rgb(30, 131, 30);
+        color:white;
+    }
+/*AÇILIR MENÜ*/
+#header .menubtn i{
+    color:#000000;
+    font-size: 22px;
+    cursor:pointer;
+    display:none;
+}
+input[type="checkbox"]{
+    display:none;
+}
+@media (max-width:600px){
+    #navbar {
+        padding:0 40px 0 50px;
+    }
+}
+@media (max-width:600px){
+    #header .menu-btn i {
+        display:block;
+    }
+
+    #navbar{
+        position:fixed;
+        top:-80px;
+        left:-110px;
+        background-color: rgb(255,255,255,0.8);
+        height:150vh;
+        width:100%;
+        text-align: center;
+        display:block;
+        transition:all 0.3s ease;
+        line-height:0px;
+    }
+    #navbar .anasayfa a{
+        font-size:20px;
+        text-align:center;
+    }
+    .mobileLink .clock {
+        display: none;
+    }
+    #click:checked ~ #navbar {
+        left:0;
+    }
+    #navbar li {
+        width:100%;
+        margin:20px 0;
+    }
+    #navbar li a{
+        width:100%;
+        display:block;
+        font-size: 15px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    #click:checked ~ #navbar a{
+        margin-left:0px;
+    }
+}
+
+
+
+.image-container {
+    margin:0 auto;
+    width:80%;
+}
+.image-container img {
+    display: block;
+    max-width: 100%; /* Konteyner genişliğine sığacak şekilde resmi ölçeklendirir */
+    height: auto; /* Orantılı yükseklik korur */
+    margin: 0 auto; /* Resmi dikeyde ortalamak için */
+    border: 5px solid rgb(223, 202, 170);;
+    border-radius: 30px 30px 30px 30px;
+}
+/*Sepete Ekle Butonu*/
+
+.sepetbutonu {
+    width:100%;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .sepetbutonu:hover {
+    background-color: #2980b9;
+  }
+/*Resimleri koyduğumuz  sütunları yapma*/
+.imgMaindiv {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+    width:100%;
+}
+.imgDiv {
+    background-color: white;
+    width: 300px;
+    height: 590px;
+    border: 3px solid rgb(199, 197, 197);
+    border-radius: 30px;
+
+}
+.imgDiv img {
+    width: 90%;
+    height:55%;
+    border-radius: 30px 30px 30px 30px;
+    margin:10px;
+}
+
+.imgDiv h3 {
+    font-size: 30px;
+    text-align: center;
+    color:rgb(56, 56, 56)
+}
+.imgDiv h4 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial;
+    color:rgb(56, 56, 56)
+}
+.imgDiv h5 {
+    color:rgb(28, 170, 63);
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial;
+}
+.rating {
+    text-align: center;
+    font-size: 10px; /* Yıldızlar arası boşlukları kaldırmak için */
+  }
+  .star {
+    display: inline-block;
+    width: 10%; /* Yıldız genişliği */
+    height: 30px; /* Yıldız yüksekliği */
+  }
+/* Ekran 800 pikselden küçük olursa ne olsun*/
+@media screen and (max-width: 800px) {
+
+    .imgDiv {
+        width: 70%;
+        margin-bottom: 30px;
+        margin-left:90px;
+    }
+    
+    .imgMaindiv {
+        flex-direction: column;
+        text-align: center;
+    }  
+    
+
+}
+/*İLETİŞİM SAYFASI*/
+
+
+#contact{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.contact-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.title{                                 /*başlık*/
+    text-decoration: underline;
+    color:rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    padding-top: 40px;
+    font-size: 2rem;
+    text-align: center;
+}
+.contact-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont-left{
+    width: 40%;
+    padding: 3rem;
+}
+.cont-top{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #000000;
+}
+.bilgiler{                              /*SOL TARAFTAKİ ADRES TELEFON MAİL*/
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.bilgiler i{
+    color: #000000;
+    padding: 0.7rem;
+    border-radius: 50%;
+    border: 2px solid #000000;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: all 0.4s ease;
+}
+.bilgiler:hover i{
+    background-color: #ffffff;
+    color: #011627;
+}
+.bilgiler a{
+    color: #000000;
+    text-decoration: none;
+}
+.instagram{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.instagram a{                                   
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    color: #000000;
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: rgb(223, 202, 170);
+    border-radius: 50%;
+}
+.instagram a:hover{                 /*LOGONUN BULUNDUĞU DAİRE ÜSTÜNE GELİNCE BÜYÜSÜN*/
+    color: #ff9f9f;
+    width:4.25rem;
+    height:4.25rem;
+}
+.insta-logo {
+    font-family: 'Times New Roman';
+    font-size: 20px;
+}
+.mesaj{
+    width: 60%;
+    padding: 3rem;
+}
+.mesaj form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mesaj form input, textarea, button{
+    width: 100%;
+    margin: 1rem 0;
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 1px solid #000000;
+    color: #000000; 
+    transition: all 0.4s ease;
+}
+.mesaj form button{                                 /*DİĞERLERİYLE KARIŞMASIN DİYE FORM YAZ BAŞINA GÖNDER BUTONU*/
+    background-color: rgb(223, 202, 170);
+    color: #000000;
+    cursor: pointer;
+}
+.mesaj form button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.mesaj form input:hover, textarea:hover{            /*FORMLARIN ÜSTÜNE GELİNCE RENKLERİ DEĞİŞSİN*/
+    color: #000000;
+    background-color: #ffffff;
+}
+.mesaj form input:focus, textarea:focus{
+    color: #000000;
+    background-color: #ffffff;
+}
+/*İLETİŞİM SAYFASI BİTTİ*/
+
+/*HAKKIMIZDA SAYFASI*/
+#about{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.about-container{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-area{
+    display: flex;
+    justify-content: center;
+}
+.about-left{
+    width: 100%;
+    padding-left:30px;
+}
+.hakkımızda {
+ width:100%;
+ padding-top: 20px;
+}
+.hakkımızda ul{
+    padding-top: 10px;
+    text-align: left;
+}
+.hakkımızda ul li{
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: arial;
+
+}
+.bahsetme {
+    padding-top:20px;
+    width:100%;
+    margin:0 auto;
+    padding-left: 40px;
+}
+.bahsetme ul{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: arial;
+}
+.degerlendirme {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 30px;
+    width:100%;
+}
+.dresim {
+    background-color: white;
+    width: 250px;
+    height: 380px;
+    border: 3px solid rgb(199, 197, 197);
+    border-radius: 30px;
+
+}
+.dresim img {
+    width: 93%;
+    height:95%;
+    border-radius: 30px 30px 30px 30px;
+    margin:10px;
+}
+.foto {
+    padding-top: 50px;
+    width:100%;
+    text-align: center;
+}
+.foto h1 {
+    font-size: 30px;
+}
+.popupbutton{
+    display: block;
+    margin: 20px auto;
+    color: white;
+    border: 0;
+    padding: 6px 10px;
+  }
+  
+  .main-popup{
+    background: rgb(223, 202, 170);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  
+  .popup ul{  
+    text-align: left;
+    width: 100%;  
+    padding: 30px;
+  }
+  
+  .popup li{
+    display:block;
+    color: rgb(0, 0, 0);
+    padding-bottom: 40px;
+    text-decoration: none;
+   
+  }
+  
+  .popup-close{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color:#000000;
+  }
+  .linklerMain {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    width:100%;
+}
+.linkler {
+    background-color: white;
+    width: 200px;
+    height: 250px;
+    border: 3px solid rgb(199, 197, 197);
+    border-radius: 30px;
+
+}
+.linkler img {
+    width: 90%;
+    height:75%;
+    border-radius: 30px 30px 30px 30px;
+    margin:10px;
+}
+.linkler h4 {
+    text-align: center;
+    font-size: 15px;
+    font-family:Arial;
+    color:rgb(56, 56, 56)
+}
+/*HAKKIMIZDA SAYFASI BİTTİ*/
+/*---------------------------------------------------------------*/
+/*SEPET SAYFASI*/
+.form-container {
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: arial;
+}
+.satır {
+    padding-left:50px;
+    display:flex;
+    justify-content: center;
+}
+label {
+    text-align: center;
+    font-size: 30px;
+    font-family: arial;
+}
+.form-grup {
+    padding:20px;
+}
+.form-kontrol {
+    width:100%;
+    height:45%;
+}
+.satır .form-grup {
+    width:100%;
+    height:auto;
+}
+#adres {
+    height:80%;
+}
+.ödemebutonu {
+    margin:30px;
+    width:90%;
+    height:45%;
+}
+.ödemebutonu:hover{
+    cursor:pointer;
+    background-color: rgb(92, 0, 0);
+    color:white;
+}
+.kaldırbutonu {
+    width:40%;
+}
+/*SEPET SAYFASI BİTTİ*/
+
+/*MEMNUNİYET ANKETİ SAYFASI*/
+.a-container{
+
+    width:100%;
+    height:auto;
+}
+.a-title{
+    margin:40px;
+    text-align: center;
+    font-size: 50px;
+}
+.şıklar {
+    padding-top:20px;
+    padding-left: 20px;
+}
+.şıklar p{
+    font-size: 30px;
+}
+.şıklar label{
+    font-size: 20px;
+}
+.form-check {
+    padding:7px;
+}
+.anketbutonu{
+    width:20%;
+    display:inline-block;
+    margin-left:50px;
+    margin-top:30px;
+    margin-bottom: 50px;
+    }
+    .anketbutonu a{
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    font-size:30px;
+    }
+    .anketbutonu button:hover {
+        background-color: white;
+        cursor:pointer;
+    }
+/*MEMNUNİYET ANKETİ SAYFASI BİTTİ*/
