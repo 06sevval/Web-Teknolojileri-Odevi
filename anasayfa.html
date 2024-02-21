@@ -1,0 +1,164 @@
+<head>
+  <meta charset="UTF-8">
+  <TITLE> citirgurumi.com </TITLE>
+    <link rel="stylesheet" href="web_ödev.css"/> <!--Harici CSS dosyasını eklemek-->
+    <style>
+      body{background-color: rgb(223, 202, 170);
+           background-image: url(arkaplan.png);
+          background-size: cover;
+        background-repeat: repeat;}
+        .clock
+          {
+            display: inline-block;
+              font-size: 30px;
+              color: #000000;
+          }
+      </style>
+      
+</head>
+<body>
+  
+  <script src="web_ödev.js" defer></script>
+  <!--HEADER-->
+  <div class="header" style="background-color: white; border-bottom:2px dashed rgb(223, 202, 170)">
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <div class="mobileLinkDisplay">
+      <ul id="navbar" class="navbar">
+        <div class="mobileLink">
+          <li><a><div class="clock"></div></a></li>
+          <div class="anasayfa">
+            <li><a href="anasayfa.html" >ÇITIRGURUMİ</a></li>
+          </div>
+          <li><a href="https://www.youtube.com/watch?v=3CWJNqyub3o" class="headerLink"><img  src="süs.png" style="width:60px; height:50px"></a></li>
+          <li><a href="hediyelikler.html" class="headerLink">Hediyelikler</a></li>
+          <li><a href="oyun.html" class="headerLink">Oyun Figürleri</a></li>
+          <li><a href="dizi.html" class="headerLink">Dizi-Film Figürleri </a></li>
+          <li><a href="hakk%C4%B1m%C4%B1zda.html" class="headerLink">Hakkımızda </a></li>
+          <li><a href="iletisim.html" class="headerLink">İletişim </a></li>
+          <li><a href="sepet.html"><img src="sepet.PNG" id="sepet" style="width:40px;height:40px;"></a></li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+  <div class="image-container">
+    <a href="hediyelikler.html"><img  src="yeniyıl.jpg" alt=""></a>
+  </div>
+
+<!--KIŞ TEMALI HEDİYELİKLER-->
+<div class="imgMaindiv">
+<div class="imgDiv">
+<img  src="geyik.jpg" alt="">
+<br>
+<h4>Yılbaşı Hediyesi</h4>
+<h4> Ren Geyiği</h4>
+<div class="rating">
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+</div>
+      
+<h3><s>300 TL</s>      150 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+<button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+<div class="imgDiv">
+<img  src="noelbaba.jpg" alt="">
+<br>
+<h4>Yılbaşı Hediyesi</h4>
+<h4> Noel Baba</h4>
+<div class="rating">
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+</div>
+      
+<h3><s>300 TL</s>      200 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+<button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+<div class="imgDiv">
+<img  src="kurabiye.jpg" alt="">
+<h4>Yılbaşı Hediyesi</h4>
+<h4> Kurabiye Adam</h4>
+<div class="rating">
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız.png">  </span>
+<span class="star"> <img src="yıldız2.PNG">  </span>
+</div>
+      
+<h3><s>300 TL</s>      150 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+<button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+</div>
+<!--2. SIRA-->
+<div class="imgMaindiv">
+<div class="imgDiv">
+  <img  src="agac.jpg" alt="">
+  <br>
+  <h4>Yılbaşı Hediyesi</h4>
+<h4> Yılbaşı Ağacı</h4>
+<div class="rating">
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız2.png">  </span>
+  <span class="star"> <img src="yıldız2.png">  </span>
+</div>
+
+<h3><s>300 TL</s>      100 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+
+  <button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+
+<div class="imgDiv">
+  <img  src="elf.jpg" alt="">
+  <br>
+  <h4>Yılbaşı Hediyesi</h4>
+<h4> Noel Babanın Yardımcısı</h4>
+<div class="rating">
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+</div>
+
+<h3><s>300 TL</s>      150 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+<button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+
+<div class="imgDiv">
+  <img  src="grinch.jpg" alt="">
+  <br>
+  <h4>Yılbaşı Hediyesi</h4>
+<h4> Grinch</h4>
+<div class="rating">
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+  <span class="star"> <img src="yıldız.png">  </span>
+</div>
+
+<h3><s>300 TL</s>      200 TL </h3>
+<h5>Belirtilen fiyat 10 Ocağa kadar geçerlidir</h5>
+<button class="sepetbutonu" onclick="addTosepet()">Sepete Ekle</button>
+</div>
+
+</div>
+
+</body>
